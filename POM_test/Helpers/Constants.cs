@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace POM_test.Helpers
+﻿namespace POM_test.Helpers
 {
     public class Constants
     {
@@ -14,5 +8,20 @@ namespace POM_test.Helpers
         public const string NAVBARCATEGORY4 = "HOME & DECOR";
         public const string NAVBARCATEGORY5 = "SALE";
         public const string NAVBARCATEGORY6 = "VIP";
+
+        public const string MYACCOUNT = "My Account";
+        public const string MYWISHLIST = "My Wishlist";
+        public const string MYCART = "My Cart";
+        public const string CHECKOUT = "Checkout";
+        public const string REGISTER = "Register";
+        public const string LOGIN = "Log In";
+
+        public const string MYACCOUNT_TITLE = "LOGIN OR CREATE AN ACCOUNT";
+        public const string MYWISHLIST_TITLE = "LOGIN OR CREATE AN ACCOUNT";
+        public const string MYCART_TITLE = "My Cart";
+        public const string CHECKOUT_TITLE = "Checkout";
+        public const string REGISTER_TITLE = "Register";
+        public const string LOGIN_TITLE = "Log In";
+
     }
 }

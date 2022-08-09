@@ -7,7 +7,7 @@ namespace POM_test.Helpers
         [SetUp]
         public void Setup()
         {
-            Driver.webDriver = new ChromeDriver("C://Users//denis//OneDrive//Desktop//internshipEvozon//POM_test//POM_test");
+            Driver.webDriver = new ChromeDriver();
             Driver.webDriver.Manage().Window.Maximize();
             //Driver.webDriver.Navigate().GoToUrl("http://qa1magento.dev.evozon.com");
             Driver.webDriver.Navigate().GoToUrl("http://qa2magento.dev.evozon.com");

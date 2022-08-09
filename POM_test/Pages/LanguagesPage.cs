@@ -1,10 +1,5 @@
 ﻿using OpenQA.Selenium;
 using POM_test.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace POM_test.Pages
 {
@@ -13,6 +8,8 @@ namespace POM_test.Pages
         #region Selectors
 
         private readonly By _languagesList = By.CssSelector("#select-language");
+
+        //private readonly By _changeLanguage = By.CssSelector(".form-language label");
 
         #endregion
         public void ClickLanguages()
@@ -32,7 +29,7 @@ namespace POM_test.Pages
                     break;
                 }
             }
-
+         
         }
     }
 }

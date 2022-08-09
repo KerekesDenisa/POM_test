@@ -1,10 +1,6 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using POM_test.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace POM_test.Pages
 {
@@ -13,6 +9,10 @@ namespace POM_test.Pages
         #region Selectors
 
         private readonly By _productList = By.CssSelector("#nav li.level0");
+
+        private readonly By _womenCategory = By.CssSelector(".nav-primary li.level0");
+        
+        private readonly By _topsAndBlouses = By.CssSelector(".level1.nav-1-2");
 
         #endregion
 
@@ -28,6 +28,13 @@ namespace POM_test.Pages
                     break;
                 }
             }
+        }
+        public void HoverCategory()
+        {
+            Actions actions = new Actions(Driver.webDriver);
+            actions.MoveToElement(Driver.webDriver.FindElement(_womenCategory));
+            actions.MoveToElement(Driver.webDriver.FindElement(_topsAndBlouses));
+            actions.Click().Build().Perform();
         }
 
     }

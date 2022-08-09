@@ -1,7 +1,6 @@
 ﻿using POM_test.Helpers;
 using POM_test.Tests;
 
-
 namespace POM_test.Test
 {
     public class TitleTest : BaseTest

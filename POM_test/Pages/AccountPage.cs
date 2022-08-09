@@ -1,10 +1,5 @@
 ﻿using OpenQA.Selenium;
 using POM_test.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace POM_test.Pages
 {
@@ -14,8 +9,10 @@ namespace POM_test.Pages
 
         private readonly By _account = By.CssSelector(".skip-link.skip-account");
 
-        private readonly By _accountList = By.CssSelector("#header-account .links");
+        private readonly By _accountList = By.CssSelector("#header-account .links li");
 
+        private readonly By _sectionTitle = By.CssSelector(".page-title h1");
+        
         #endregion
 
         public void ClickAccount()
@@ -26,7 +23,7 @@ namespace POM_test.Pages
         public void ClickOnAccountLinks(string name)
         {
             var accountContent = Driver.webDriver.FindElements(_accountList);
-
+            
             foreach (var element in accountContent)
             {
                 if (element.Text.Equals(name))
@@ -36,6 +33,10 @@ namespace POM_test.Pages
                 }
             }
 
+        }
+        public String GetSectionTitle()
+        {
+            return Driver.webDriver.FindElement(_sectionTitle).Text;
         }
     }
 }

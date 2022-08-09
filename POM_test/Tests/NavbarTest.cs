@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using POM_test.Helpers;
-
+﻿using POM_test.Helpers;
 
 namespace POM_test.Tests
 {
@@ -21,6 +15,8 @@ namespace POM_test.Tests
         public void NavbarPageTest(string name)
         {
             PagesStore.NavbarPage.NavigateNavbar(name);
+            //PagesStore.CategoryPage.VerifyCategory(name);
+            Assert.IsTrue(PagesStore.CategoryPage.VerifyCategory(name));
         }
     }
 }

@@ -12,6 +12,9 @@ namespace POM_test.Tests
         public static AccountPage AccountPage => InitPage(new AccountPage());
         public static LanguagesPage LanguagesPage => InitPage(new LanguagesPage());
         public static NavbarPage NavbarPage => InitPage(new NavbarPage());
+        public static CategoryPage CategoryPage => InitPage(new CategoryPage());
+        public static ProductDetailsPage ProductDetailsPage => InitPage(new ProductDetailsPage());
+        public static ShoppingCartPage ShoppingCartPage => InitPage(new ShoppingCartPage());
 
         public static T InitPage<T>(T page)
         {
